@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="iFood Suite">
+	<test name="iFood Automation Test" junit="true">
+		<classes>
+			<!-- <class name="iFood_Web_Automation.runner.iFoodRunner" /> -->
+			<!-- <class name="iFood_Web_Automation.runner.CheckRunner" /> -->
+			<!-- <class name="iFood_Web_Automation.runner.ReportsRunner" />  -->
+			<class name="iFood_Web_Automation.runner.MainRunner" /> 
+			
+		</classes>
+	</test>
+</suite>

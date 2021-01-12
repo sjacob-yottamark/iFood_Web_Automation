@@ -1,0 +1,74 @@
+/Users/sjacob/Development/2020/iFoods_Automation/HM_Portal_Automation
+/Users/sjacob/Development/2020/iFoods_Automation
+
+mvn clean compile test
+
+
+Assert.assertEquals(true, notificationCheck.getAttribute("checked").equals("true"));
+
+Even better:
+Assert.assertEquals("true", notificationCheck.getAttribute("checked"));
+
+
+Alert handle Lesson 62
+
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>5.7.0</version>
+</dependency>
+
+<plugin>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.22.1</version>
+        </plugin>
+
+//System.setProperty("webdriver.gecko.driver", "\\Users\\sjacob\\Development\\2020\\iFoods_Automation\\HM_Portal_Automation\\src\\test\\java\\HM_Portal_Automation\\resource\\geckodriver");
+		//System.setProperty("webdriver.firefox.bin", "/Users/sjacob/Development/2020/iFoods_Automation/HM_Portal_Automation/src/test/java/HM_Portal_Automation/resource/geckodriver");
+		//System.setProperty("webdriver.firefox.bin", "/Applications/Firefox.app/Contents/MacOS/firefox-bin");
+		
+		//@cucumber.api.java.en.Given("User navigates to harvestmark portal")
+	                           @Given("User navigates to harvestmark portal")
+	                           
+@Then("^I click on reviewLogs - Check$")
+	public void i_click_on_reviewLogs_Check() throws Throwable {
+		Thread.sleep(2000);
+		driver.findElement(By.id("reviewLogs")).click();
+		//WebElement reportLogs = driver.findElement(By.id("//h1[contains(text(), 'Code Explorer')]"));
+		//Assert.assertEquals(true, reportLogs.isDisplayed());  
+	}
+	
+	@Then("^I click on reviewLogs - Nueva$")
+	public void i_click_on_reviewLogs_Nueva() throws Throwable {
+		Thread.sleep(2000);
+		driver.findElement(By.id("reviewLogs")).click();
+		//WebElement reportLogs = driver.findElement(By.id("//h1[contains(text(), 'Code Explorer')]"));
+		//Assert.assertEquals(true, reportLogs.isDisplayed());  
+		
+		Thread.sleep(5000);
+	}
+	
+	
+	  @Then("^I click on reportLogs - Reports$") public void
+	  i_click_on_reportLogs_Reports() throws Throwable { Thread.sleep(2000);
+	  driver.findElement(By.id("reportLogs")).click(); //WebElement reportLogs =
+	  driver.findElement(By.id("//h1[contains(text(), 'Code Explorer')]"));
+	  //Assert.assertEquals(true, reportLogs.isDisplayed()); }
+	  
+	  
+	  @Then("^I click on reportLogs - Reportes$") public void
+	  i_click_on_reportLogs_Nueva() throws Throwable { Thread.sleep(2000);
+	  driver.findElement(By.id("reportLogs")).click(); //WebElement reportLogs =
+	  driver.findElement(By.id("//h1[contains(text(), 'Code Explorer')]"));
+	  //Assert.assertEquals(true, reportLogs.isDisplayed());
+	  
+	  Thread.sleep(5000); }
+	  
+	  #goToHomeIcon
+	 
+
+
+
+
+
+		
